@@ -1,0 +1,18 @@
+package org.test.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+	static WebDriver driver;
+
+	public static void openBrowser() {
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\Selenium Workspace\\MavenProject\\PageObjectModel\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+	public static void loadUrl(String url) {
+		driver.get(url);
+	}
+
+}

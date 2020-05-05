@@ -1,0 +1,10 @@
+package org.test.pom;
+
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPojo {
+	public LoginPojo() {
+		PageFactory.initElements(driver, this);
+	}
+
+}

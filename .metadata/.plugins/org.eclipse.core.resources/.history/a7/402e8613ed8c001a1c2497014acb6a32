@@ -1,0 +1,9 @@
+package org.test.pom;
+
+public class ExecutableClass extends BaseClass{
+	public static void main(String[] args) {
+		openBrowser();
+		loadUrl("https://www.facebook.com/");
+	}
+
+}

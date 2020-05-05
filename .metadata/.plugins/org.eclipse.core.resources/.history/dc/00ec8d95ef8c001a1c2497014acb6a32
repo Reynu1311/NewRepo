@@ -1,0 +1,40 @@
+package org.test.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+	public static WebDriver driver;
+
+	public static WebDriver openBrowser() {
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\Selenium Workspace\\MavenProject\\PageObjectModel\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		return driver;
+	}
+
+	public static void loadUrl(String url) {
+		driver.get(url);
+	}
+
+	public static void pageTitle() {
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
+
+	public static void pageUrl() {
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println(currentUrl);
+	}
+
+	public static void fill(WebElement e, String value) {
+		e.sendKeys(value);
+	}
+
+	public static void btnClick(WebElement f) {
+		f.click();
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package org.test.pom;
+
+public class BaseClass {
+	public static void openBrowser() {
+System.setProperty("webdriver.chrome.driver", "D:\\Selenium Workspace\\MavenProject\\PageObjectModel\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	}
+
+}
