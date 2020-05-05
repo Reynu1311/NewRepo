@@ -20,5 +20,10 @@ public class A {
 		System.out.println("test 3");
 
 	}
+	@Test
+	public void tc4() {
+		System.out.println("test 4");
+
+	}
 
 }
